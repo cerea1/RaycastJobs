@@ -1,0 +1,12 @@
+{
+  "name": "com.raycastjobs",
+  "displayName": "Raycast Jobs",
+  "version": "0.1.0",
+  "unity": "2019.1",
+  "description": "Workaround for jobified raycasts limitations",
+  "dependencies": {
+    "com.unity.jobs": "0.1.0-preview",
+    "com.unity.burst": "1.1.2",
+    "com.unity.collections": "0.1.1-preview"
+  }
+}

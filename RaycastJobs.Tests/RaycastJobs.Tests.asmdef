@@ -1,0 +1,17 @@
+{
+    "name": "RaycastJobs.Tests",
+    "references": [
+        "GUID:b409284c1dab32146a324b3f6f01225c",
+        "GUID:0acc523941302664db1f4e527237feb3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": []
+}
