@@ -24,7 +24,7 @@ Also manual disposing a RaycastAllCommand is required because it internaly alloc
 // preparing NativeArrays
 ...
 
-var raycastAllCommand = new SpherecastAllCommand(commands, results, maxHits);
+var raycastAllCommand = new RaycastAllCommand(commands, results, maxHits);
 raycastAllCommand.Schedule(default(JobHandle)).Complete();
 
 raycastAllCommand.Dispose();
