@@ -9,6 +9,7 @@ namespace RaycastJobs
     {
         private NativeArray<RaycastHit> results;
         private int maxHits;
+        public int MaxHits { get => maxHits; }
         public readonly float minStep;
 
         private NativeArray<RaycastHit>[] semiResults;
@@ -182,6 +183,7 @@ namespace RaycastJobs
             {
                 semiCommands[i].Dispose();
             }
+            maxHits = 0;
         }
     }
 }

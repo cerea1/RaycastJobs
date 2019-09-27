@@ -3,7 +3,7 @@ Workaround for Unity RaycastCommand maxHit limitation
 
 # Known issues
 * RaycastAllCommand uses parameter minStep while scheduling internal jobs to overcome an issue with immediate hit near mesh collider corners
-* In contrast to SpherecastAll SpherecastAllCommand could not return hit when ray origin inside a collider
+* In contrast to SpherecastAll SpherecastAllCommand could not return hit when ray origin is inside a collider
 
 # Installation
 * Via Package Manager:
@@ -18,7 +18,7 @@ Workaround for Unity RaycastCommand maxHit limitation
 
 # Usage
 Refer to RaycastCommand docs https://docs.unity3d.com/ScriptReference/RaycastCommand.html
-Note that each RaycastCommand.maxHits value should equals to 1 in order to use RaycastAllCommand.
+Note that each RaycastCommand.maxHits should be 1 in order to use RaycastAllCommand.
 Also manual disposing a RaycastAllCommand is required because it internaly allocates NativeArrays.
 ```
 // preparing NativeArrays

@@ -9,6 +9,7 @@ namespace RaycastJobs
     {
         private NativeArray<RaycastHit> results;
         private int maxHits;
+        public int MaxHits { get => maxHits; }
 
         private NativeArray<RaycastHit>[] semiResults;
         private NativeArray<SpherecastCommand>[] semiCommands;
@@ -171,6 +172,7 @@ namespace RaycastJobs
             {
                 semiCommands[i].Dispose();
             }
+            maxHits = 0;
         }
     }
 }

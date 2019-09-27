@@ -36,6 +36,8 @@ namespace RaycastJobs.Tests
             meshConvexCollider = Object.Instantiate(meshCubeCollider, new Vector3(20f, 0f, 0f), Quaternion.identity);
             meshConvexCollider.transform.rotation = new Quaternion(0.5954201f, 0.3555247f, -0.5951921f, 0.4059847f);
             meshConvexCollider.convex = true;
+
+            Physics.SyncTransforms();
         }
 
         [OneTimeTearDown]

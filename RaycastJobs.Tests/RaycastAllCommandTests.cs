@@ -36,6 +36,8 @@ namespace RaycastJobs.Tests
             var rotation = meshConvexCollider.transform.rotation;
             Debug.Log($"{rotation.x}; {rotation.y}; {rotation.z}; {rotation.w}");
             meshConvexCollider.convex = true;
+
+            Physics.SyncTransforms();
         }
 
 
